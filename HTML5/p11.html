@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Input</h1>
+    <button id="Show">Show dialog</button>
+    <dialog id="forms">
+        <button class="cls">Close</button>
+        <form>
+        <h1>Enter the form</h1>
+            <div class="item">
+                
+                    <label for="">Enter name</label>
+                    <input type="text" name="name" id ='name'>
+                    <br>
+                    </div>
+                    <div class="item">
+                    <label for="pass">Password</label>
+            <input type="password" name="" id="">
+            <br>
+            <button type="submit">Yes</button>
+            <button type="submit">no</button>
+            
+                
+            </div>
+            </form>
+        
+
+    </dialog>
+    <script>
+        var sh =document.getElementById('Show');
+        var cl=document.querySelector('.cls');
+        var al=document.getElementById('forms');
+        sh.addEventListener('click',function(){
+            al.show();
+        })
+        cl.addEventListener('click',function(){
+            al.close();
+        })
+
+    </script>
+</body>
+</html>
